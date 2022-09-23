@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<devices version=""><host id="1"><hostName>订单服务</hostName><hostCode>1001</hostCode><hostDate>2024-09-08</hostDate></host><host id="0"><hostName>数据服务</hostName><hostCode>1002</hostCode><hostDate>2024-09-08</hostDate></host><host id="0"><hostName>商品服务</hostName><hostCode>1003</hostCode><hostDate>2024-09-08</hostDate></host><!--这是注释-->&lt;host&gt;&lt;Name&gt;测试&lt;/Name&gt;&lt;/host&gt;</devices>

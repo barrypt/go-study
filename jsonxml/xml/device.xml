@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<devices version="3">
+    <host id="1">
+        <hostName>订单服务器</hostName>
+        <hostCode>10001</hostCode>
+        <hostDate>2023-03-01</hostDate>
+    </host>
+    <host id="2">
+        <hostName>数据库服务器</hostName>
+        <hostCode>100002</hostCode>
+        <hostDate>2024-03-15</hostDate>
+    </host>
+    <host id="3">
+        <hostName>Redis服务器</hostName>
+        <hostCode>100003</hostCode>
+        <hostDate>2024-05-13</hostDate>
+    </host>
+</devices>

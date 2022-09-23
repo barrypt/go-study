@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+import "google/protobuf/wrappers.proto";
+package chatroom;
+option go_package=".";
+
+service ChatRoom{
+  rpc login(User) returns(google.protobuf.StringValue);
+  rpc chat(stream ChatMessage) returns(stream ChatMessage);
+}
+
+message User{
+  string id = 1;
+  string name = 2;
+}
+
+message ChatMessage{
+  string id = 1;
+  string name = 2;
+  uint64 time = 3;
+  string content = 4;
+}
