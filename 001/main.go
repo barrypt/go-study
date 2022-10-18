@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"fmt"
 	"io/fs"
 	"log"
 	"net"
@@ -9,7 +10,99 @@ import (
 	"os"
 )
 
+const (
+	m      = iota
+	w      = "woman"
+	unknow = iota
+)
+const (
+	MONDAY = iota
+	TUESDAY
+	WEDNESDAY
+	THURSDAY
+	FRIDAY
+	SATURDAY
+	SUNDAY
+)
+
+func insertCh(ch1 chan int) {
+
+	for i := 0; i < 10; i++ {
+		ch1 <- i
+	}
+
+	close(ch1)
+}
+func readCh(ch1 chan int) {
+
+	for {
+
+		select {
+
+		case gg, ok := <-ch1:
+			if !ok {
+				fmt.Println("通道中已关闭")
+				goto stop
+			}
+			fmt.Println("ch1", gg)
+		default:
+			fmt.Println("通道中没有数据")
+		}
+		fmt.Println("waiting")
+	}
+    stop:
+}
 func main() {
+
+	var ch1 = make(chan int, 2)
+
+	go insertCh(ch1)
+
+	go readCh(ch1)
+
+	var ary = [10]int{1}
+
+	for i := 0; i < len(ary); i++ {
+		ary[i] = i
+	}
+
+	for i, v := range ary {
+
+		fmt.Println("sdsd", i, v)
+	}
+
+	var mm map[string]int = make(map[string]int)
+	mm["1"] = 1
+	hh := mm["1"]
+	fmt.Println("hh:", hh)
+	fmt.Println("mmlen:", len(mm))
+	//fmt.Println(cap(mm))
+
+	for k, v := range mm {
+
+		fmt.Println("kv", k, v)
+
+	}
+
+	fmt.Println(m)
+	fmt.Println(w)
+	fmt.Println(unknow)
+	fmt.Println(TUESDAY)
+	var i interface{} = "hello"
+
+	switch i.(type) {
+	case string:
+		fmt.Println("string:", i)
+	case float64:
+		fmt.Println("float:", i)
+	}
+
+	f, ok := i.(float64) //  no runtime panic
+	fmt.Println(f, ok)
+
+	//f = i.(float64) // panic
+	//fmt.Println(f)
+
 	http.Handle("/", http.FileServer(getFileSystem(false)))
 	ip, err := getLocalIP()
 	if err != nil {

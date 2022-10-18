@@ -6,4 +6,8 @@ use (
 ./ginstudy
 ./jsonxml
 ./viper
+./kratos/kratostudy
+./001
+./reflectStudy
+./custinterceptor
 )
