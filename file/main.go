@@ -89,6 +89,7 @@ func WriteLine(filename string) error {
 // 使用缓存区写入
 func WriteLine2(filename string) error {
 	file, err := os.OpenFile(filename, os.O_WRONLY, 0666)
+	file.Close()
 	if err != nil {
 		return err
 	}

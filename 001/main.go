@@ -5,9 +5,11 @@ import (
 	"fmt"
 	"io/fs"
 	"log"
+	"math/rand"
 	"net"
 	"net/http"
 	"os"
+	"time"
 )
 
 const (
@@ -27,7 +29,7 @@ const (
 
 func insertCh(ch1 chan int) {
 
-	for i := 0; i < 10; i++ {
+	for i := 0; i < 3; i++ {
 		ch1 <- i
 	}
 
@@ -50,9 +52,14 @@ func readCh(ch1 chan int) {
 		}
 		fmt.Println("waiting")
 	}
-    stop:
+stop:
 }
 func main() {
+
+	today := time.Date(2022, 10, 31, 0, 0, 0, 0, time.Local)
+	nextDay := today.AddDate(0, 1, 0)
+	fmt.Println(nextDay.Format("20060102"))
+	// 输出：20221201
 
 	var ch1 = make(chan int, 2)
 
@@ -60,7 +67,7 @@ func main() {
 
 	go readCh(ch1)
 
-	var ary = [10]int{1}
+	var ary = [3]int{1}
 
 	for i := 0; i < len(ary); i++ {
 		ary[i] = i
@@ -88,6 +95,12 @@ func main() {
 	fmt.Println(w)
 	fmt.Println(unknow)
 	fmt.Println(TUESDAY)
+
+	fmt.Println("SEED", time.Now().UnixMilli())
+	rand.Seed(time.Now().Unix())
+	rd := rand.Intn(100)
+	fmt.Println("rand", rd)
+
 	var i interface{} = "hello"
 
 	switch i.(type) {
@@ -124,6 +137,7 @@ func getFileSystem(useOS bool) http.FileSystem {
 	if useOS {
 		return http.FS(os.DirFS("wwwroot"))
 	}
+
 	fsys, err := fs.Sub(embededFiles, "wwwroot")
 	if err != nil {
 		panic(err)
