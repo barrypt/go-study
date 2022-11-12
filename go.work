@@ -1,10 +1,15 @@
 go 1.18
 
 use (
-
-./grpc/client
-./ginstudy
-./jsonxml
-./viper
-./001
+	./grpc/client
+	./ginstudy
+	./jsonxml
+	./viper
+	./kratos/kratostudy
+	./001
+	./reflectStudy
+	./custinterceptor
+	./agollo
+	./runtime
+	./001
 )
