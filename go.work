@@ -6,4 +6,5 @@ use (
 ./ginstudy
 ./jsonxml
 ./viper
+./001
 )
