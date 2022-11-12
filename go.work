@@ -11,5 +11,5 @@ use (
 	./custinterceptor
 	./agollo
 	./runtime
-	./001
+	./gorm
 )
