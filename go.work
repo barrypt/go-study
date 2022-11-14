@@ -12,5 +12,6 @@ use (
 ./custinterceptor
 ./agollo
 ./runtime
+./gorm
 ./http
 )

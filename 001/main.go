@@ -55,67 +55,6 @@ func readCh(ch1 chan int) {
 stop:
 }
 func main() {
-
-	today := time.Date(2022, 10, 31, 0, 0, 0, 0, time.Local)
-	nextDay := today.AddDate(0, 1, 0)
-	fmt.Println(nextDay.Format("20060102"))
-	// 输出：20221201
-
-	var ch1 = make(chan int, 2)
-
-	go insertCh(ch1)
-
-	go readCh(ch1)
-
-	var ary = [3]int{1}
-
-	for i := 0; i < len(ary); i++ {
-		ary[i] = i
-	}
-
-	for i, v := range ary {
-
-		fmt.Println("sdsd", i, v)
-	}
-
-	var mm map[string]int = make(map[string]int)
-	mm["1"] = 1
-	hh := mm["1"]
-	fmt.Println("hh:", hh)
-	fmt.Println("mmlen:", len(mm))
-	//fmt.Println(cap(mm))
-
-	for k, v := range mm {
-
-		fmt.Println("kv", k, v)
-
-	}
-
-	fmt.Println(m)
-	fmt.Println(w)
-	fmt.Println(unknow)
-	fmt.Println(TUESDAY)
-
-	fmt.Println("SEED", time.Now().UnixMilli())
-	rand.Seed(time.Now().Unix())
-	rd := rand.Intn(100)
-	fmt.Println("rand", rd)
-
-	var i interface{} = "hello"
-
-	switch i.(type) {
-	case string:
-		fmt.Println("string:", i)
-	case float64:
-		fmt.Println("float:", i)
-	}
-
-	f, ok := i.(float64) //  no runtime panic
-	fmt.Println(f, ok)
-
-	//f = i.(float64) // panic
-	//fmt.Println(f)
-
 	http.Handle("/", http.FileServer(getFileSystem(false)))
 	ip, err := getLocalIP()
 	if err != nil {
