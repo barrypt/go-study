@@ -13,4 +13,6 @@ use (
 ./runtime
 ./gorm
 ./http
+./ioc
+./snowflake
 )
