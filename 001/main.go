@@ -5,11 +5,9 @@ import (
 	"fmt"
 	"io/fs"
 	"log"
-	"math/rand"
 	"net"
 	"net/http"
 	"os"
-	"time"
 )
 
 const (
