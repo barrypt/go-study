@@ -4,9 +4,11 @@ import (
 	v1 "kratostudy/api/helloworld/v1"
 	"kratostudy/internal/conf"
 	"kratostudy/internal/service"
+	"time"
 
 	"github.com/go-kratos/kratos/v2/log"
 	"github.com/go-kratos/kratos/v2/middleware/recovery"
+	"github.com/go-kratos/kratos/v2/middleware/tracing"
 	"github.com/go-kratos/kratos/v2/transport/grpc"
 )
 
