@@ -2,6 +2,7 @@ package main
 
 import (
 	"embed"
+	"errors"
 	"fmt"
 	"io/fs"
 	"log"
@@ -24,6 +25,27 @@ const (
 	SATURDAY
 	SUNDAY
 )
+
+type Stu struct {
+	A string
+	B string
+}
+
+func AA(aa interface{}) (bb interface{}, err error) {
+
+	switch aa.(type) {
+
+	case *Stu:
+		aa1 := aa.(*Stu)
+		fmt.Println("stu", aa1)
+	case string:
+		fmt.Println("string", aa)
+
+	}
+
+	return "", errors.New("111")
+
+}
 
 func insertCh(ch1 chan int) {
 
@@ -53,6 +75,10 @@ func readCh(ch1 chan int) {
 stop:
 }
 func main() {
+
+	AA(&Stu{A: "122", B: "3455"})
+	AA("234455")
+
 	http.Handle("/", http.FileServer(getFileSystem(false)))
 	ip, err := getLocalIP()
 	if err != nil {
