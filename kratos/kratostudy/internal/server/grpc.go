@@ -18,18 +18,6 @@ func NewGRPCServer(c *conf.Server, greeter *service.GreeterService, logger log.L
 		),
 	}
 
-	// create grpc conn
-// only for demo, use single instance in production env
-     conn, err := grpc.DialInsecure(ctx,
-	grpc.WithEndpoint("127.0.0.1:9000"),
-	grpc.WithMiddleware(
-		recovery.Recovery(),
-		tracing.Client(),
-	),
-	grpc.WithTimeout(2*time.Second),
-	// for tracing remote ip recording
-	grpc.WithOptions(grpcx.WithStatsHandler(&tracing.ClientHandler{})),
-)
 	if c.Grpc.Network != "" {
 		opts = append(opts, grpc.Network(c.Grpc.Network))
 	}

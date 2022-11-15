@@ -15,4 +15,6 @@ use (
 ./http
 ./ioc
 ./snowflake
+./goleak
+./jwt
 )
