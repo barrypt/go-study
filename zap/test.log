@@ -1,0 +1,295 @@
+2022-11-17T19:49:25.868+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:25.882+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:25.882+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:25.914+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:25.916+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:25.919+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:25.920+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:25.941+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:25.943+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:25.943+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:25.943+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:25.962+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:25.965+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:25.968+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:25.969+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:25.994+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:25.994+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:25.995+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:25.995+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.020+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.022+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.022+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.022+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.048+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.050+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.051+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.051+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.072+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.073+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.073+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.075+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.099+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.101+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.102+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.103+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.150+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.156+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.159+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.161+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.181+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.183+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.184+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.188+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.211+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.211+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.212+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.212+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.235+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.237+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.238+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.239+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.263+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.268+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.269+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.270+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.294+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.295+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.296+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.296+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.320+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.321+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.321+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.322+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.343+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.344+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.344+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.344+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.369+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.371+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.373+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.374+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.395+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.396+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.396+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.399+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.421+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.422+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.422+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.422+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.443+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.445+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.450+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.451+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.486+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.490+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.491+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.492+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.519+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.520+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.521+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.522+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.548+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.551+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.553+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.555+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.578+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.579+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.579+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.580+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.601+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.604+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.605+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.605+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.637+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.639+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.640+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.641+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.670+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.672+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.672+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.673+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.700+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.705+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.705+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.706+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.727+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.728+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.728+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.729+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.750+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.752+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.753+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.754+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.778+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.779+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.780+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.780+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.802+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.803+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.803+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.803+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.865+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.867+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.867+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.868+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.896+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.900+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.904+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.905+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.929+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.930+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.933+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.937+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.955+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.956+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.957+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.957+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.978+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:26.978+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:26.979+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:26.980+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:26.999+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.001+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.002+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.002+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.027+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.028+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.029+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.029+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.050+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.053+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.057+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.059+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.079+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.080+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.080+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.084+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.112+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.113+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.117+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.120+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.139+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.141+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.141+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.142+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.166+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.168+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.170+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.170+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.189+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.190+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.191+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.191+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.218+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.221+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.222+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.223+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.243+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.244+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.244+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.245+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.264+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.264+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.270+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.271+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.292+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.294+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.295+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.295+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.317+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.320+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.321+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.321+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.338+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.340+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.341+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.342+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.368+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.368+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.370+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.370+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.391+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.392+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.394+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.394+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.412+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.414+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.414+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.414+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.437+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.438+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.441+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.441+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.462+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.462+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.463+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.463+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.483+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.484+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.487+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.489+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.509+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.512+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.512+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.513+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.536+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.537+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.537+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.538+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.563+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.564+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.564+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.566+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.585+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.586+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.587+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.587+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.606+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.606+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.606+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.607+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.632+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.635+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.636+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.636+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.655+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.656+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.656+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.658+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.680+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.681+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.687+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.688+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.713+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.714+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.714+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.719+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.740+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.741+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.742+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.743+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.767+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.769+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.769+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.769+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.789+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.789+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.790+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.790+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.810+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.811+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.812+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.812+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.833+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.838+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.838+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.839+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.859+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.860+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.860+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.861+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
+2022-11-17T19:49:27.887+0800	INFO	zap/main.go:63	Success! statusCode = 200 OK for URL http://www.baidu.com
+2022-11-17T19:49:27.889+0800	DEBUG	zap/main.go:58	Trying to hit GET request for www.baidu.com
+2022-11-17T19:49:27.890+0800	ERROR	zap/main.go:61	Error 这是一个错误日志 fetching URL www.baidu.com : Error = Get "www.baidu.com": unsupported protocol scheme ""
+2022-11-17T19:49:27.890+0800	DEBUG	zap/main.go:58	Trying to hit GET request for http://www.baidu.com
