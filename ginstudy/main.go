@@ -6,8 +6,9 @@ import (
 	"net/http"
 	"os"
 	"strconv"
-
+	"GO-STUDY/ginstudy/route"
 	"github.com/gin-gonic/gin"
+
 )
 
 type a struct {
@@ -16,6 +17,7 @@ type a struct {
 
 func main() {
 	r := gin.Default()
+	router.Router(r)
 	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{
 			"message": "pong",
