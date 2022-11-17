@@ -17,4 +17,5 @@ use (
 ./snowflake
 ./goleak
 ./jwt
+./kafka
 )
