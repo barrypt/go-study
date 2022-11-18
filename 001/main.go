@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"embed"
 	"errors"
 	"fmt"
@@ -9,6 +10,7 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"time"
 )
 
 const (
@@ -30,32 +32,47 @@ type Stu struct {
 	A string
 	B string
 }
+type StuGen[T any] struct {
+	A T
+	B string
+}
+
+func (stu *StuGen[T]) Get() {
+
+	fmt.Println("A", stu.A)
+}
+
+func GenericGet[T int | string](aa T) {
+
+	fmt.Println("TA", aa)
+
+}
 
 func AA(aa interface{}) (bb interface{}, err error) {
 
-	switch aa.(type) {
+	switch res := aa.(type) {
 
 	case *Stu:
-		aa1 := aa.(*Stu)
-		fmt.Println("stu", aa1)
+		fmt.Println("stu", res)
 	case string:
-		fmt.Println("string", aa)
-
+		fmt.Println("string", res)
+	default:
+		fmt.Println(aa)
 	}
 
 	return "", errors.New("111")
 
 }
 
-func insertCh(ch1 chan int) {
+func insertCh(ch1 chan<- int) {
 
-	for i := 0; i < 3; i++ {
+	for i := 0; i < 1000000000; i++ {
 		ch1 <- i
 	}
 
-	close(ch1)
+	//close(ch1)
 }
-func readCh(ch1 chan int) {
+func readCh(ch1 <-chan int, cx context.Context) {
 
 	for {
 
@@ -67,6 +84,10 @@ func readCh(ch1 chan int) {
 				goto stop
 			}
 			fmt.Println("ch1", gg)
+		case <-cx.Done():
+			stu1 := Stu{A: "122", B: "3455"}
+			fmt.Println("通道中已关闭", cx.Value(stu1))
+			goto stop
 		default:
 			fmt.Println("通道中没有数据")
 		}
@@ -74,7 +95,33 @@ func readCh(ch1 chan int) {
 	}
 stop:
 }
+
+type Str = int
+
 func main() {
+	stu1 := Stu{A: "122", B: "3455"}
+	stu2 := Stu{A: "122", B: "3455"}
+	fmt.Println("stu1==stu2", stu1 == stu2)
+	xt := context.Background()
+	vacx := context.WithValue(xt, stu1, Str(236365))
+
+	chan1 := make(chan int)
+	sxt, cal := context.WithCancel(vacx)
+
+	time.AfterFunc(time.Duration(time.Second*3), func() {
+		cal()
+		//close(chan1)
+	})
+	go insertCh(chan1)
+	go readCh(chan1, sxt)
+
+	gg := &StuGen[string]{A: "123456", B: "123"}
+
+	fmt.Println("gg", gg)
+
+	gg.Get()
+
+	GenericGet(123)
 
 	AA(&Stu{A: "122", B: "3455"})
 	AA("234455")
