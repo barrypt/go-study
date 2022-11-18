@@ -5,11 +5,34 @@ import (
 	"io/ioutil"
 	"net"
 	"net/http"
+	"net/http/httptrace"
 	"os"
 	"time"
-)
 
+	"github.com/dghubble/sling"
+)
+type Params struct {
+	Count int `url:"count,omitempty"`
+}
 func main() {
+
+	fmt.Printf("%+v\n", fmt)
+	params := &Params{Count: 5}
+	req, _ := sling.New().Get("https://example.com").QueryStruct(params).Request()
+	// handle error
+
+	trace := &httptrace.ClientTrace{
+		DNSDone: func(dnsInfo httptrace.DNSDoneInfo) {
+			fmt.Printf("DNS Info: %+v\n", dnsInfo)
+		},
+		GotConn: func(connInfo httptrace.GotConnInfo) {
+			fmt.Printf("Got Conn: %+v\n", connInfo)
+		},
+	}
+
+	req = req.WithContext(httptrace.WithClientTrace(req.Context(), trace))
+	http.DefaultClient.Do(req)
+
 
 	dns := "www.baidu.com"
 

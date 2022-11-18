@@ -9,8 +9,11 @@ import (
 	"log"
 	"net"
 	"net/http"
+	"net/http/httptrace"
 	"os"
 	"time"
+
+	"github.com/dghubble/sling"
 )
 
 const (
@@ -66,7 +69,7 @@ func AA(aa interface{}) (bb interface{}, err error) {
 
 func insertCh(ch1 chan<- int) {
 
-	for i := 0; i < 1000000000; i++ {
+	for i := 0; i < 1; i++ {
 		ch1 <- i
 	}
 
@@ -108,7 +111,7 @@ func main() {
 	chan1 := make(chan int)
 	sxt, cal := context.WithCancel(vacx)
 
-	time.AfterFunc(time.Duration(time.Second*3), func() {
+	time.AfterFunc(time.Duration(time.Second*1), func() {
 		cal()
 		//close(chan1)
 	})
