@@ -20,4 +20,5 @@ use (
 ./kafka
 ./rsa
 ./zap
+./grpc-gateway-example
 )

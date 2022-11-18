@@ -9,11 +9,8 @@ import (
 	"log"
 	"net"
 	"net/http"
-	"net/http/httptrace"
 	"os"
 	"time"
-
-	"github.com/dghubble/sling"
 )
 
 const (

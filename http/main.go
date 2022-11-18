@@ -7,16 +7,36 @@ import (
 	"net/http"
 	"net/http/httptrace"
 	"os"
+	"sync"
 	"time"
 
 	"github.com/dghubble/sling"
 )
+
 type Params struct {
 	Count int `url:"count,omitempty"`
 }
+
 func main() {
 
-	fmt.Printf("%+v\n", fmt)
+	poll := sync.Pool{
+
+		New: func() interface{} {
+			return &Params{}
+		},
+	}
+
+	v1 := poll.Get().(*Params)
+
+	v1.Count=10
+
+	poll.Put(v1)
+
+	v2:=poll.Get().(*Params)
+
+	fmt.Println("v2",v2.Count)
+
+
 	params := &Params{Count: 5}
 	req, _ := sling.New().Get("https://example.com").QueryStruct(params).Request()
 	// handle error
@@ -32,7 +52,6 @@ func main() {
 
 	req = req.WithContext(httptrace.WithClientTrace(req.Context(), trace))
 	http.DefaultClient.Do(req)
-
 
 	dns := "www.baidu.com"
 
