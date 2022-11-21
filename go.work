@@ -21,4 +21,5 @@ use (
 ./rsa
 ./zap
 ./grpc-gateway-example
+./opentelemetry-go
 )
