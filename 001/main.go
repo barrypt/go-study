@@ -10,7 +10,7 @@ import (
 	"net"
 	"net/http"
 	"os"
-	"time"
+	_ "time"
 )
 
 const (
@@ -99,21 +99,29 @@ stop:
 type Str = int
 
 func main() {
+
+	for y := 0; y < 10; y++ {
+
+		go func() {
+			fmt.Println("yyy", y)
+		}()
+	}
+
 	stu1 := Stu{A: "122", B: "3455"}
 	stu2 := Stu{A: "122", B: "3455"}
 	fmt.Println("stu1==stu2", stu1 == stu2)
-	xt := context.Background()
-	vacx := context.WithValue(xt, stu1, Str(236365))
+	//xt := context.Background()
+	//vacx := context.WithValue(xt, stu1, Str(236365))
 
-	chan1 := make(chan int)
-	sxt, cal := context.WithCancel(vacx)
+	//chan1 := make(chan int)
+	//sxt, cal := context.WithCancel(vacx)
 
-	time.AfterFunc(time.Duration(time.Second*1), func() {
-		cal()
+	//time.AfterFunc(time.Duration(time.Second*1), func() {
+	//	cal()
 		//close(chan1)
-	})
-	go insertCh(chan1)
-	go readCh(chan1, sxt)
+	//})
+	//go insertCh(chan1)
+	//go readCh(chan1, sxt)
 
 	gg := &StuGen[string]{A: "123456", B: "123"}
 
