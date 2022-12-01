@@ -22,4 +22,5 @@ use (
 ./zap
 ./grpc-gateway-example
 ./opentelemetry-go
+./semaphore
 )
