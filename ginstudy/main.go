@@ -1,14 +1,15 @@
 package main
 
 import (
+	router "GO-STUDY/ginstudy/route"
 	"encoding/json"
 	"fmt"
 	"net/http"
 	"os"
 	"strconv"
-	"GO-STUDY/ginstudy/route"
-	"github.com/gin-gonic/gin"
 
+	"github.com/bitly/go-simplejson"
+	"github.com/gin-gonic/gin"
 )
 
 type a struct {
@@ -16,6 +17,8 @@ type a struct {
 }
 
 func main() {
+
+	 fmt.Println("1",os.Getenv("AA"))
 	r := gin.Default()
 	router.Router(r)
 	r.GET("/ping", func(c *gin.Context) {
@@ -35,21 +38,24 @@ func main() {
 		a := &a{}
 		file, fileerr := ctx.FormFile("file")
 
-		if fileerr == nil {
-
+		if fileerr != nil {
+			fmt.Println(fileerr)
 		}
 		ofile, errr := file.Open()
+		if errr == nil {
+			fmt.Println(errr)
+		}
 		defer ofile.Close()
 
-		if errr == nil {
-
-		}
 		exfile, err := os.OpenFile("./aa.txt", int(os.O_CREATE), 0666)
+		if err == nil {
+			fmt.Println(err)
+		}
 		defer exfile.Close()
 		wbuyte := make([]byte, 11)
 		readf, errrr := ofile.Read(wbuyte)
-		if errrr == nil {
-
+		if errrr != nil {
+			fmt.Println(errrr)
 		}
 		fmt.Println("wbuyte", string(wbuyte))
 		fmt.Println("readf", readf)
@@ -60,10 +66,38 @@ func main() {
 		}
 		jsn, err := json.Marshal(a)
 		if err == nil {
-
+			fmt.Println(err)
 		}
 		fmt.Println(string(jsn))
 
 	})
+	r.GET("mumianhua", func(ctx *gin.Context) {
+
+		Head := ctx.Request.Header
+		tokne := Head.Get("token")
+		data1 := `{"code":0,"msg":"成功","data":{"orgName":"测试渠道三","phone":"18513390121",
+		"name":"哦婆婆","firstOrgId":3226735873409168,"firstOrgName":"北京分公司","orgId":3302629329677568},
+		"timestamp":1670321150961,"success":true}`
+		data2 := `{"code":0,"msg":"成功","data":{"orgName":"测试渠道三","phone":"18513391121",
+		"name":"哦婆婆","firstOrgId":3226735873409168,"firstOrgName":"","orgId":3302629329677568},
+		"timestamp":1670321150961,"success":true}`
+
+		switch tokne {
+		case "1":
+			ff, err := simplejson.NewJson(([]byte(data1)))
+			if err != nil {
+				fmt.Println(err)
+			}
+			ctx.JSON(200, ff)
+		case "2":
+			ff1, err := simplejson.NewJson(([]byte(data2)))
+			if err != nil {
+				fmt.Println(err)
+			}
+			ctx.JSON(200, ff1)
+		}
+
+	})
+	//gin.SetMode(gin.ReleaseMode)
 	r.Run() // listen and serve on 0.0.0.0:8080 (for windows "localhost:8080")
 }
