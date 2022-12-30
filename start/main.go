@@ -10,6 +10,7 @@ import (
 	"net"
 	"net/http"
 	"os"
+	"sync"
 	_ "time"
 )
 
@@ -97,12 +98,19 @@ stop:
 }
 
 type Str = int
-
+var  IsLoopback   sync.WaitGroup
 func main() {
 
 	for y := 0; y < 10; y++ {
 
+		IsLoopback.Add(1);
+		go func(z int) {
+			fmt.Println("zzz", z)
+			IsLoopback.Done()
+		}(y)
+
 		go func() {
+			IsLoopback.Wait()
 			fmt.Println("yyy", y)
 		}()
 	}

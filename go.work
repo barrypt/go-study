@@ -7,7 +7,7 @@ use (
 ./jsonxml
 ./viper
 ./kratos/kratostudy
-./001
+./start
 ./reflectStudy
 ./custinterceptor
 ./agollo
