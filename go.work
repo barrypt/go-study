@@ -24,4 +24,6 @@ use (
 ./grpc-gateway-example
 ./opentelemetry-go
 ./semaphore
+./socket/serve
+./socket/client
 )
