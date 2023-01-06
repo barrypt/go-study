@@ -98,12 +98,30 @@ stop:
 }
 
 type Str = int
-var  IsLoopback   sync.WaitGroup
+
+var IsLoopback sync.WaitGroup
+
 func main() {
 
+	var c1 = make(chan int, 3)
+
+	for i := 0; i < 3; i++ {
+
+		c1 <- i
+
+	}
+	//close(c1)
+
+	go func() {
+		for g := range c1 {
+
+			fmt.Println("g", g)
+
+		}
+	}()
 	for y := 0; y < 10; y++ {
 
-		IsLoopback.Add(1);
+		IsLoopback.Add(1)
 		go func(z int) {
 			fmt.Println("zzz", z)
 			IsLoopback.Done()
@@ -126,7 +144,7 @@ func main() {
 
 	//time.AfterFunc(time.Duration(time.Second*1), func() {
 	//	cal()
-		//close(chan1)
+	//close(chan1)
 	//})
 	//go insertCh(chan1)
 	//go readCh(chan1, sxt)
