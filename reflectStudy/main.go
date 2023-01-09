@@ -54,8 +54,6 @@ func TestRef3(s *Teacher) (t reflect.Type) {
 func main() {
 
 
-	ast.StructType
-
 	st := &Study[string]{
 		Name: "newyear",
 	}
