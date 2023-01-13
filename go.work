@@ -26,4 +26,5 @@ use (
 ./semaphore
 ./socket/serve
 ./socket/client
+./base
 )

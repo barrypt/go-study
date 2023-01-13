@@ -18,7 +18,7 @@ type a struct {
 
 func main() {
 
-	 fmt.Println("1",os.Getenv("AA"))
+	fmt.Println("1", os.Getenv("AA"))
 	r := gin.Default()
 	router.Router(r)
 	r.GET("/ping", func(c *gin.Context) {

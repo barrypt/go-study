@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"go/ast"
+	_ "go/ast"
 	"reflect"
 
-	"golang.org/x/tools/go/ast/astutil"
+	_ "golang.org/x/tools/go/ast/astutil"
 )
 
 type Speaker interface {
