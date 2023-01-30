@@ -27,4 +27,5 @@ use (
 ./socket/serve
 ./socket/client
 ./base
+./ns
 )

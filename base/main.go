@@ -24,6 +24,8 @@ type b []struct {
 
 func main() {
 
+	var a string
+
 	hhh := `[{"name":"123"},{"name":"2565"}]`
 
 	var jjj b
