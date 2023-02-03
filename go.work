@@ -28,4 +28,5 @@ use (
 ./socket/client
 ./base
 ./ns
+./proxy
 )

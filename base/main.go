@@ -24,8 +24,6 @@ type b []struct {
 
 func main() {
 
-	var a string
-
 	hhh := `[{"name":"123"},{"name":"2565"}]`
 
 	var jjj b
@@ -35,7 +33,7 @@ func main() {
 		fmt.Println(i, v)
 	}
 
-	GGG := &a{Name: "133", B: make(b, 2)}
+	GGG := &a{Name: "133"}
 
 	fmt.Println(GGG)
 
