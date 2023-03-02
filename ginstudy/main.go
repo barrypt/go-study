@@ -4,6 +4,7 @@ import (
 	router "GO-STUDY/ginstudy/route"
 	"encoding/json"
 	"fmt"
+	_ "net"
 	"net/http"
 	"os"
 	"strconv"
@@ -16,7 +17,20 @@ type a struct {
 	Name string `json:"name"`
 }
 
+func aa(a int) (t int) {
+
+	t = a
+	defer func() { t += 2 }()
+
+	t += 10
+	return t
+
+}
+
+
+
 func main() {
+
 
 	fmt.Println("1", os.Getenv("AA"))
 	r := gin.Default()
@@ -78,8 +92,8 @@ func main() {
 		data1 := `{"code":0,"msg":"成功","data":{"orgName":"测试渠道三","phone":"18513390121",
 		"name":"哦婆婆","firstOrgId":3226735873409168,"firstOrgName":"北京分公司","orgId":3302629329677568},
 		"timestamp":1670321150961,"success":true}`
-		data2 := `{"code":0,"msg":"成功","data":{"orgName":"测试渠道三","phone":"18513391121",
-		"name":"哦婆婆","firstOrgId":3226735873409168,"firstOrgName":"","orgId":3302629329677568},
+		data2 := `{"code":0,"msg":"成功","data":{"orgName":"","phone":"18513391121",
+		"name":"哦婆婆","firstOrgId":3226735873409168,"firstOrgName":"测试","orgId":3302629329677568},
 		"timestamp":1670321150961,"success":true}`
 
 		switch tokne {

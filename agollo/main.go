@@ -9,6 +9,7 @@ import (
 	"github.com/apolloconfig/agollo/v4/constant"
 	"github.com/apolloconfig/agollo/v4/env/config"
 	"github.com/apolloconfig/agollo/v4/extension"
+	"github.com/spf13/viper"
 )
 
 type ContentSwg struct {
@@ -37,8 +38,20 @@ func main() {
 		return c, nil
 	})
 
-	key1,_:=client.GetConfigCache("test.yml").Get("content")
-	 fmt.Println("key11",key1)
+	viper.SetConfigType("yaml")
+	viper.SetConfigName("2")
+	viper.SetConfigType("yaml")
+	viper.AddConfigPath("C:\\Users\\49688\\Desktop")
+	if err:= viper.ReadInConfig();err!=nil{
+		fmt.Println("err",err)
+	}
+	var gg = viper.GetInt("A.b")
+	var tt = viper.AllSettings()
+	fmt.Println("ff", gg)
+	fmt.Println("tt", tt)
+
+	key1, _ := client.GetConfigCache("test.yml").Get("content")
+	fmt.Println("key11", key1)
 
 	if err != nil {
 		fmt.Println("err:", err)
@@ -64,11 +77,11 @@ func checkKey(namespace string, client agollo.Client) {
 
 		fmt.Println("va", sw.SwaggerConfig.RoutePrefix)
 
-		switch  res:= value.(type) {
+		switch res := value.(type) {
 		case string:
 			json.Unmarshal([]byte(va), &sw)
 			fmt.Println("va", sw.SwaggerConfig.RoutePrefix)
-			fmt.Println("res",res)
+			fmt.Println("res", res)
 		case *Swagger:
 			ff := value.(*Swagger)
 			fmt.Println("ff", ff.SwaggerConfig)
@@ -99,7 +112,7 @@ func (fileHandler *FileHandler) GetConfigFile(configDir string, appID string, na
 	return ""
 }
 
-//LoadConfigFile load config from file
+// LoadConfigFile load config from file
 func (fileHandler *FileHandler) LoadConfigFile(configDir string, appID string, namespace string) (*config.ApolloConfig, error) {
 	return &config.ApolloConfig{}, nil
 }
@@ -110,7 +123,7 @@ type Parser struct {
 
 // Parse 内存内容=>yml文件转换器
 func (d *Parser) Parse(configContent interface{}) (map[string]interface{}, error) {
-	fmt.Println("parse",configContent)
+	fmt.Println("parse", configContent)
 
 	m := make(map[string]interface{})
 	m["content"] = configContent

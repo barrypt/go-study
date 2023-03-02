@@ -8,6 +8,9 @@ import (
 
 func Router(r *gin.Engine)  {
 
+
+
+   r.Use(gin.Recovery())
    //用户登录
    r.GET("/login", controller.LoginController)
    //使用中间件

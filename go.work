@@ -29,4 +29,5 @@ use (
 ./base
 ./ns
 ./proxy
+./prome
 )
