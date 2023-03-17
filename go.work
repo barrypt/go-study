@@ -1,33 +1,35 @@
 go 1.18
 
 use (
-./grpc/client
-./grpc/server
-./ginstudy
-./jsonxml
-./viper
-./kratos/kratostudy
-./start
-./reflectStudy
-./custinterceptor
-./agollo
-./runtime
-./gorm
-./http
-./ioc
-./snowflake
-./goleak
-./jwt
-./kafka
-./rsa
-./zap
-./grpc-gateway-example
-./opentelemetry-go
-./semaphore
-./socket/serve
-./socket/client
-./base
-./ns
-./proxy
-./prome
+	./agollo
+	./base
+	./chatgpt
+	./custinterceptor
+	./ginstudy
+	./goleak
+	./gorm
+	./grpc-gateway-example
+	./grpc/client
+	./grpc/server
+	./http
+	./ioc
+	./jsonxml
+	./jwt
+	./kafka
+	./kratos/kratostudy
+	./ns
+	./opentelemetry-go
+	./prome
+	./proxy
+	./reflectStudy
+	./rsa
+	./runtime
+	./semaphore
+	./snowflake
+	./socket/client
+	./socket/serve
+	./start
+	./viper
+	./zap
+	./httpsproxy
 )
