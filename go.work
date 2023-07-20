@@ -32,4 +32,6 @@ use (
 	./viper
 	./zap
 	./httpsproxy
+	./redis
+	./es
 )
