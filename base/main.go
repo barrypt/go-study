@@ -24,6 +24,9 @@ type b []struct {
 
 func main() {
 
+
+	  Demo2()
+
 	hhh := `[{"name":"123"},{"name":"2565"}]`
 
 	var jjj b
@@ -84,4 +87,16 @@ func FloatDecimal(d decimal.Decimal) float64 {
 		return f
 	}
 	return 0
+}
+
+func Demo2() (i int) {
+	defer func() {
+		i++
+		fmt.Println("defer2:", i) // 打印结果为 defer: 2
+	}()
+	defer func() {
+		i++
+		fmt.Println("defer1:", i) // 打印结果为 defer: 1
+	}()
+	return i // 或者直接 return 效果相同
 }
