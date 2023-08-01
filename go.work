@@ -36,4 +36,5 @@ use (
 	./es
 	./Govulncheck
 	./mmap
+	./unsafe
 )
