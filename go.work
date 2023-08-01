@@ -35,4 +35,5 @@ use (
 	./redis
 	./es
 	./Govulncheck
+	./mmap
 )
