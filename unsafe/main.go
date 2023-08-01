@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"os"
 	"reflect"
 	"unsafe"
 )
@@ -22,6 +23,11 @@ type SliceHeader struct {
 }
 
 func main() {
+
+
+     fmt.Println(os.Getenv("APP_VERSION"))
+
+
 	p := Programmer{"qu", "go"}
 	fmt.Println(p)
 	name := (*string)(unsafe.Pointer(&p))
@@ -31,7 +37,7 @@ func main() {
 	*lang = "Golang"
 	fmt.Println(p)
 
-	
+
 	sliceD := string2bytes("qpt")
 	fmt.Println(bytes2string(sliceD))
 

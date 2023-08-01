@@ -37,4 +37,5 @@ use (
 	./Govulncheck
 	./mmap
 	./unsafe
+	./redislock
 )
