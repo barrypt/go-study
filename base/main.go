@@ -4,6 +4,8 @@ import (
 	"encoding/json"
 	"fmt"
 	"strconv"
+	"sync"
+	"time"
 
 	"github.com/shopspring/decimal"
 )
@@ -22,10 +24,39 @@ type b []struct {
 	Name string `json:"name"`
 }
 
+func IndexOf[T comparable](collection []T, element T) int {
+	for i, item := range collection {
+		if item == element {
+			return i
+		}
+	}
+
+	return -1
+}
+
 func main() {
 
+	var wg sync.WaitGroup
+	foo := make(chan int)
+	bar := make(chan int)
+	wg.Add(1)
+	go func() {
+		bar <- 12
+	}()
+	go func() {
+		time.Sleep(time.Duration(1000) * time.Millisecond)
+		defer wg.Done()
+		select {
+		case t := <-bar:
+			foo <- t
+			println("t", t)
+		default:
+			println("default")
+		}
+	}()
+	//wg.Wait()
 
-	  Demo2()
+	//Demo2()
 
 	hhh := `[{"name":"123"},{"name":"2565"}]`
 
@@ -40,10 +71,10 @@ func main() {
 
 	fmt.Println(GGG)
 
-	fmt.Println(GGG.B[0].Name)
+	//fmt.Println(GGG.B[0].Name)
 
 	for i, v := range GGG.B {
-		fmt.Println(i, v)
+		fmt.Println("y", i, v)
 	}
 
 	e := buyGoods{Num: 123}
