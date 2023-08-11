@@ -27,10 +27,7 @@ func aa(a int) (t int) {
 
 }
 
-
-
 func main() {
-
 
 	fmt.Println("1", os.Getenv("AA"))
 	r := gin.Default()

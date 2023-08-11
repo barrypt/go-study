@@ -1,10 +1,13 @@
-go 1.18
+go 1.21.0
 
 use (
+	./Govulncheck
 	./agollo
 	./base
 	./chatgpt
 	./custinterceptor
+	./es
+	./eventbus
 	./ginstudy
 	./goleak
 	./gorm
@@ -12,15 +15,19 @@ use (
 	./grpc/client
 	./grpc/server
 	./http
+	./httpsproxy
 	./ioc
 	./jsonxml
 	./jwt
 	./kafka
 	./kratos/kratostudy
+	./mmap
 	./ns
 	./opentelemetry-go
 	./prome
 	./proxy
+	./redis
+	./redislock
 	./reflectStudy
 	./rsa
 	./runtime
@@ -29,14 +36,7 @@ use (
 	./socket/client
 	./socket/serve
 	./start
+	./unsafe
 	./viper
 	./zap
-	./httpsproxy
-	./redis
-	./es
-	./Govulncheck
-	./mmap
-	./unsafe
-	./redislock
-	./eventbus
 )

@@ -1,6 +1,6 @@
 module gl
 
-go 1.18
+go 1.21.0
 
 require go.uber.org/goleak v1.2.0
 
