@@ -1,6 +1,7 @@
 package main
 
 import (
+	"context"
 	"encoding/json"
 	"fmt"
 	"strconv"
@@ -9,6 +10,19 @@ import (
 
 	"github.com/shopspring/decimal"
 )
+
+type postFunc func(c context.Context) error
+
+// interface 实现
+func PostFuncImpl(c context.Context) error {
+	return nil
+}
+
+func postParm(p postFunc) {
+
+	p(nil)
+
+}
 
 // 购买商品
 type buyGoods struct {
@@ -35,6 +49,10 @@ func IndexOf[T comparable](collection []T, element T) int {
 }
 
 func main() {
+
+	var pf = postFunc(PostFuncImpl)
+	pf(nil)
+	postParm(PostFuncImpl)
 
 	var wg sync.WaitGroup
 	foo := make(chan int)
