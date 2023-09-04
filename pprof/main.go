@@ -16,6 +16,8 @@ func main() {
 			time.Sleep(time.Microsecond + 10)
 		}
 	}()
+
+	http.HandleFunc()
 	//http://localhost:6060/debug/pprof/
 	_ = http.ListenAndServe(":6060", nil)
 }

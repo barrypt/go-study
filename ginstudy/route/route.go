@@ -4,11 +4,13 @@ import (
    "GO-STUDY/ginstudy/controller"
    _ "GO-STUDY/ginstudy/middleware"
    "github.com/gin-gonic/gin"
+   "github.com/gin-contrib/pprof"
+
 )
 
 func Router(r *gin.Engine)  {
 
-
+   pprof.Register(r)
 
    r.Use(gin.Recovery())
    //用户登录

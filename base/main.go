@@ -4,6 +4,7 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	"reflect"
 	"strconv"
 	"sync"
 	"time"
@@ -51,6 +52,7 @@ func IndexOf[T comparable](collection []T, element T) int {
 func main() {
 
 	var pf = postFunc(PostFuncImpl)
+
 	pf(nil)
 	postParm(PostFuncImpl)
 
