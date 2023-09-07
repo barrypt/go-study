@@ -17,7 +17,7 @@ type a struct {
 	Name string `json:"name"`
 }
 
-func aa(a int) (t int) {
+func aa[T int | int64](a T) (t T) {
 
 	t = a
 	defer func() { t += 2 }()
@@ -28,6 +28,8 @@ func aa(a int) (t int) {
 }
 
 func main() {
+
+	fmt.Println(aa(1))
 
 	fmt.Println("1", os.Getenv("AA"))
 	r := gin.Default()

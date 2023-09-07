@@ -10,13 +10,16 @@ import (
 )
 
 var sugarLogger *zap.SugaredLogger
+var sugar *zap.Logger
 
 func main() {
 	InitLogger()
 	defer sugarLogger.Sync()
+	defer sugar.Sync()
 	for {
 		simpleHttpGet("www.baidu.com")
 		simpleHttpGet("http://www.baidu.com")
+		sugar.Info("1223333344",zap.Bool("444",true))
 	}
 }
 

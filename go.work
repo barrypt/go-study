@@ -45,4 +45,5 @@ use (
 	./gotest
 	./slog
 	./arena
+	./rabbitMq
 )

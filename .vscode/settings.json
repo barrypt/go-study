@@ -1,3 +1,4 @@
 {
-    "DevChat.DevChatPath": "C:\\Users\\49688\\.vscode\\extensions\\merico.devchat-0.1.19\\tools/devchat/Scripts/devchat"
+    "DevChat.DevChatPath": "C:\\Users\\49688\\.chat\\mamba\\envs\\devchat\\Scripts\\devchat",
+    "DevChat.OpenAI.model": "gpt-3.5-turbo"
 }
