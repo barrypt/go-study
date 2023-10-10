@@ -46,4 +46,5 @@ use (
 	./slog
 	./arena
 	./rabbitMq
+	./k8sclient
 )
