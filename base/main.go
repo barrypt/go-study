@@ -50,6 +50,10 @@ func IndexOf[T comparable](collection []T, element T) int {
 
 func main() {
 
+	bs := &BigStruct{}
+
+	bs.PointerReceiverMethod()
+
 	var pf = postFunc(PostFuncImpl)
 
 	pf(nil)
@@ -149,4 +153,12 @@ func Demo2() (i int) {
 		fmt.Println("defer1:", i) // 打印结果为 defer: 1
 	}()
 	return i // 或者直接 return 效果相同
+}
+
+type BigStruct struct {
+	data [1 << 20]int
+}
+
+func (b BigStruct) PointerReceiverMethod() int {
+	return b.data[0]
 }
