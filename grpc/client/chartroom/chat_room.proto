@@ -15,6 +15,7 @@ message User{
 }
 
 message ChatMessage{
+  google.protobuf.StringValue ss =5;
   string id = 1;
   string name = 2;
   uint64 time = 3;

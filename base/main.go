@@ -4,6 +4,8 @@ import (
 	"context"
 	"encoding/json"
 	"fmt"
+	_ "os"
+	_ "reflect"
 	"strconv"
 	"sync"
 	"time"
@@ -49,7 +51,18 @@ func IndexOf[T comparable](collection []T, element T) int {
 }
 
 func main() {
+	time.Sleep(time.Millisecond)
+	defer func() {
+		err := recover()
 
+		if err != nil {
+			fmt.Printf("%+v\n", err)
+		}
+
+	}()
+	sddd := make([]int, 5)
+	sddd[4] = 1
+	fmt.Printf("dddd %v", sddd)
 	bs := &BigStruct{}
 
 	bs.PointerReceiverMethod()

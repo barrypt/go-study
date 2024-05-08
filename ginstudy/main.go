@@ -106,7 +106,7 @@ func main() {
 			ff1, err := simplejson.NewJson(([]byte(data2)))
 			if err != nil {
 				fmt.Println(err)
-			}
+			} 
 			ctx.JSON(200, ff1)
 		}
 

@@ -47,4 +47,5 @@ use (
 	./arena
 	./rabbitMq
 	./k8sclient
+	./errgroup
 )

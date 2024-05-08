@@ -1,2 +1,4 @@
+github.com/barrypt/go-collections v0.0.0-20240112075018-446afe336cb8 h1:JH7s4IlyVnQIRDbXsKVeQGfAngGK9xAoFdGL5aMeeHI=
+github.com/barrypt/go-collections v0.0.0-20240112075018-446afe336cb8/go.mod h1:g/L0MwX99psXvVFu6SK7kzzt6Pl66N30ECPdJBARmpw=
 github.com/shopspring/decimal v1.3.1 h1:2Usl1nmF/WZucqkFZhnfFYxxxu8LG21F6nPQBE5gKV8=
 github.com/shopspring/decimal v1.3.1/go.mod h1:DKyhrW/HYNuLGql+MJL6WCR6knT2jwCFRcu2hWCYk4o=
